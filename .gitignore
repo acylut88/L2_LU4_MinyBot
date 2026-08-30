@@ -27,3 +27,5 @@ bot_config.ini
 !Logs.txt
 *.log
 
+# Папка со скриншотами таймлапса
+screenshots/
