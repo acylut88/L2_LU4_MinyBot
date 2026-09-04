@@ -146,6 +146,10 @@ class ConfigManager:
         user_data["active_resolution"] = resolution
         self.save()
 
+    def get_global_settings(self) -> Dict[str, Any]:
+        """Возвращает словарь глобальных настроек."""
+        return self._config.get("global_settings", {})
+
     def get_self_buff_settings(self) -> dict[str, bool | int | list[str]]:
         """
         Возвращает настройки самобаффа для текущего пользователя.
