@@ -21,8 +21,8 @@ class HardwareManager:
         self.config = config_manager
         
         # Читаем настройки из global_settings
-        # Предполагаем, что ConfigManager имеет метод get_global_settings() или аналогичный доступ
-        global_settings = self.config.get_global_settings() if hasattr(self.config, 'get_global_settings') else self.config.config_data.get('global_settings', {})
+        # ConfigManager имеет метод get_global_settings()
+        global_settings = self.config.get_global_settings()
         
         self.port_name: str = global_settings.get("arduino_port", "COM3")
         self.baudrate: int = global_settings.get("baudrate", 115200)
