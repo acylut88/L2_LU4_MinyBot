@@ -59,7 +59,6 @@ class App(ctk.CTk):
 
         # BotCore получает ссылку на event loop и все менеджеры
         self.bot_core = BotCore(
-            loop=self.async_loop,
             config=self.config,
             hardware=self.hardware,
             vision=self.vision,
