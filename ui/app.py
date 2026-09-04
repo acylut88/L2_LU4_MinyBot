@@ -47,7 +47,7 @@ class App(ctk.CTk):
 
         # ── 1. Инициализация бэкенд-менеджеров ──
         self.config = ConfigManager()
-        self.hardware = HardwareManager()
+        self.hardware = HardwareManager(self.config)
         self.vision = VisionManager()
 
         # ── 2. Запуск asyncio в отдельном daemon-потоке ──
