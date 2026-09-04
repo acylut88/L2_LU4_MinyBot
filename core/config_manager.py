@@ -150,9 +150,9 @@ class ConfigManager:
         """Возвращает словарь глобальных настроек."""
         return self._config.get("global_settings", {})
 
-    def get_users(self) -> Dict[str, Any]:
-        """Возвращает словарь всех пользователей."""
-        return self._config.get("users", {})
+    def get_users(self) -> list[str]:
+        """Возвращает список имен всех пользователей."""
+        return list(self._config.get("users", {}).keys())
 
     def get_self_buff_settings(self) -> dict[str, bool | int | list[str]]:
         """
