@@ -123,7 +123,7 @@ def run_ui(config_path: Path):
     try:
         # 3. Запуск графического интерфейса
         # App сам запустит BotCore в фоновом потоке и будет управлять его жизненным циклом
-        app = App(config_manager, hardware_manager, vision_manager, _bot_core_instance)
+        app = App()
         app.run()
     except KeyboardInterrupt:
         logger.info("🛑 Получен сигнал KeyboardInterrupt в UI-режиме.")
