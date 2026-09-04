@@ -1,0 +1,43 @@
+{
+    "global_settings": {
+        "arduino_port": "COM3",
+        "mss_tick_rate_ms": 50
+    },
+    "active_user": "Default_User",
+    "users": {
+        "Default_User": {
+            "active_resolution": "1920x1080",
+            "hotkeys": {
+                "attack": "F1",
+                "heal": "F2",
+                "buff": "F3"
+            },
+            "logic": {
+                "has_pet": false,
+                "auto_loot": true,
+                "use_potions": true
+            },
+            "self_buff": {
+                "enabled": false,
+                "interval_minutes": 15,
+                "hotkeys": []
+            },
+            "resolutions": {
+                "1920x1080": {
+                    "pixels": {
+                        "hp_bar": {
+                            "x": 150,
+                            "y": 45,
+                            "color": "#FF0000"
+                        },
+                        "mp_bar": {
+                            "x": 150,
+                            "y": 65,
+                            "color": "#0000FF"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
