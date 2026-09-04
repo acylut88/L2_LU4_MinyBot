@@ -1,1 +1,37 @@
-(core/config_manager.py)
+# Виртуальное окружение
+.venv/
+venv/
+ENV/
+env/
+
+# Кэш Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Локальные файлы конфигурации (содержат личные настройки портов и координат)
+bot_config.ini
+
+# Настройки сред разработки (VS Code, PyCharm)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Временные текстовые файлы и логи
+!Logs.txt
+*.log
+
+# Папка со скриншотами таймлапса
+screenshots/
+
+# Исполняемые файлы и архивы
+*.exe
+*.zip
+*.rar
+*.7z

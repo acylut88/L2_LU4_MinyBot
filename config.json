@@ -1,6 +1,6 @@
 {
     "global_settings": {
-        "arduino_port": "COM3",
+        "arduino_port": "COM4",
         "mss_tick_rate_ms": 50
     },
     "active_user": "Default_User",
